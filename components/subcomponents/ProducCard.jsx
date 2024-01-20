@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ButtonCart from './ButtonCart'
-export default function ProducCard({id, title, price, description, category, image, rating}){
-
+export default function ProducCard(props){
+    const {id, title, price, description, category, image, rating}=props
     return(
         <>
             <div className=' flex justify-between bg-slate-30 transition-all rounded-md p-10' id={id}>
